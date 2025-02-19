@@ -1,4 +1,3 @@
-
 interface Image {
     className?: string;
     src: string;

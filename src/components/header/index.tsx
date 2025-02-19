@@ -90,7 +90,6 @@ const Header = () => {
     return (
         <>
             <div className="header">
-                {/* Logo */}
                 <div className="header-left active" onMouseEnter={toggleExpandMenu} onMouseLeave={toggleExpandMenu2}>
                     <Link to={route.dealsDashboard} className="logo logo-normal">
                         {/* {layoutBs === "dark" ? (
