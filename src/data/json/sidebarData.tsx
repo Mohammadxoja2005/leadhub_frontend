@@ -1,6 +1,6 @@
-import {all_routes} from "../../app/router/all_routes";
+import {allroutes} from "../../app/routes.ts";
 
-const route = all_routes;
+const route = allroutes;
 export const SidebarData = [
     {
         label: "MAIN MENU",

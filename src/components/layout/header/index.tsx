@@ -1,7 +1,7 @@
 import {useState, Fragment} from "react";
 import {Link, useLocation} from "react-router-dom";
 import ImageWithBasePath from "../../image-with-base-path";
-import {all_routes} from "../../../app/router/all_routes.tsx";
+import {allroutes} from "../../../app/routes.ts";
 import {useDispatch, useSelector} from "react-redux";
 import {
     setExpandMenu,
@@ -15,7 +15,7 @@ const Header = () => {
     const [subsidebar, setSubsidebar] = useState("");
 
     const [isFullscreen, setIsFullscreen] = useState(false);
-    const route = all_routes;
+    const route = allroutes;
     const location = useLocation();
     const dispatch = useDispatch();
     const mobileSidebar = useSelector((state: any) => state.mobileSidebar);

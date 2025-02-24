@@ -1,7 +1,6 @@
 import {StrictMode} from 'react'
 import {createRoot} from 'react-dom/client'
 import './index.css'
-import App from './App.tsx'
 import {Provider} from "react-redux";
 import store from "./data/redux/store";
 import {BrowserRouter} from "react-router-dom";
@@ -16,12 +15,13 @@ import "../src/assets/css/feather.css";
 import "../src/index.scss";
 import "../src/assets/icon/boxicons/boxicons/css/boxicons.min.css";
 import "../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js";
+import Router from "./app/router";
 
 createRoot(document.getElementById('root')!).render(
     <StrictMode>
         <Provider store={store}>
             <BrowserRouter basename={"/"}>
-                <App/>
+                <Router/>
             </BrowserRouter>
         </Provider>
     </StrictMode>

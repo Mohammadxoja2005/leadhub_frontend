@@ -1,6 +1,6 @@
-import {all_routes} from "../../app/router/all_routes";
+import {allroutes} from "../../app/routes.ts";
 
-const routes = all_routes;
+const routes = allroutes;
 
 export const HorizontalSidebarData = [
     {
