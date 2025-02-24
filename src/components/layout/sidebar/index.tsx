@@ -1,11 +1,11 @@
 import {useEffect, useState} from "react";
 import {Link, useLocation} from "react-router-dom";
 import Scrollbars from "react-scrollbars-custom";
-import {SidebarData} from "../../data/json/sidebarData";
-import ImageWithBasePath from "../image-with-base-path";
+import {SidebarData} from "../../../data/json/sidebarData.tsx";
+import ImageWithBasePath from "../../image-with-base-path";
 import {useDispatch, useSelector} from "react-redux";
-import {setExpandMenu} from "../../data/redux/commonSlice";
-import {all_routes} from "../../app/router/all_routes";
+import {setExpandMenu} from "../../../data/redux/commonSlice.tsx";
+import {all_routes} from "../../../app/router/all_routes.tsx";
 
 const Sidebar = () => {
     const Location = useLocation();

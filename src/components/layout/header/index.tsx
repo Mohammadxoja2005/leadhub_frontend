@@ -1,14 +1,14 @@
 import {useState, Fragment} from "react";
 import {Link, useLocation} from "react-router-dom";
-import ImageWithBasePath from "../image-with-base-path";
-import {all_routes} from "../../app/router/all_routes";
+import ImageWithBasePath from "../../image-with-base-path";
+import {all_routes} from "../../../app/router/all_routes.tsx";
 import {useDispatch, useSelector} from "react-redux";
 import {
     setExpandMenu,
     setMiniSidebar,
     setMobileSidebar,
-} from "../../data/redux/commonSlice";
-import {HorizontalSidebarData} from "../../data/json/horizontalSidebar";
+} from "../../../data/redux/commonSlice.tsx";
+import {HorizontalSidebarData} from "../../../data/json/horizontalSidebar.tsx";
 
 const Header = () => {
     const [subOpen, setSubopen] = useState<any>("");
