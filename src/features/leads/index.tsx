@@ -1,8 +1,8 @@
 import {useState} from "react";
 import {Link} from "react-router-dom";
 import Select from "react-select";
-import DatePicker from "react-datepicker";
-import "react-datepicker/dist/react-datepicker.css";
+// import DatePicker from "react-datepicker";
+// import "react-datepicker/dist/react-datepicker.css";
 import {
     countryoptions1,
     languageOptions,
@@ -19,7 +19,6 @@ import ImageWithBasePath from "../../components/image-with-base-path";
 import CollapseHeader from "./components/collapse-header";
 import {SelectWithImage2} from "./components/select-with-image-2";
 import {allroutes} from "../../app/routes.ts";
-import {TagsInput} from "react-tag-input-component";
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import Table from "../../components/table";
 
@@ -1179,7 +1178,7 @@ const Leads = () => {
                                 <div className="col-md-6">
                                     <div className="mb-3">
                                         <label className="col-form-label">Tags </label>
-                                        <TagsInput
+                                        <Select
                                             // className="input-tags form-control"
                                             value={owner}
                                             onChange={setOwner}
@@ -1431,7 +1430,7 @@ const Leads = () => {
                                                 <div className="col-md-6">
                                                     <div className="mb-3">
                                                         <label className="col-form-label">Tags </label>
-                                                        <TagsInput
+                                                        <Select
                                                             // className="input-tags form-control"
                                                             value={owner}
                                                             onChange={setOwner}
@@ -1917,7 +1916,7 @@ const Leads = () => {
                                 <div className="col-md-6">
                                     <div className="mb-3">
                                         <label className="col-form-label">Tags </label>
-                                        <TagsInput
+                                        <Select
                                             // className="input-tags form-control"
                                             value={owner}
                                             onChange={setOwner}
