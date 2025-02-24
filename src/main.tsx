@@ -16,12 +16,14 @@ import "../src/index.scss";
 import "../src/assets/icon/boxicons/boxicons/css/boxicons.min.css";
 import "../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js";
 import Router from "./app/router";
+import Layout from "./components/layout";
 
 createRoot(document.getElementById('root')!).render(
     <StrictMode>
         <Provider store={store}>
             <BrowserRouter basename={"/"}>
-                <Router/>
+                {/*<Router/>*/}
+                <Layout/>
             </BrowserRouter>
         </Provider>
     </StrictMode>
