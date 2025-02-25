@@ -1,5 +1,5 @@
 import {useState} from "react";
-import ImageWithBasePath from "../../../../components/image-with-base-path";
+import ImageWithBasePath from "../image-with-base-path";
 import {Dropdown} from "primereact/dropdown";
 
 export const SelectWithImage = () => {

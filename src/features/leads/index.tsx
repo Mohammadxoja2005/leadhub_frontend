@@ -1,8 +1,6 @@
 import {useState} from "react";
 import {Link} from "react-router-dom";
 import Select from "react-select";
-// import DatePicker from "react-datepicker";
-// import "react-datepicker/dist/react-datepicker.css";
 import {
     countryoptions1,
     languageOptions,
@@ -11,13 +9,13 @@ import {
     options,
     optionschoose,
     optionsource,
-} from "./components/selectoption/selectoption.ts";
+} from "../../components/selectoption/selectoption.ts";
 import {leadsData} from "../../data/json/leads.tsx";
 import {Modal} from "react-bootstrap";
 import {TableData} from "../../data/interface";
 import ImageWithBasePath from "../../components/image-with-base-path";
-import CollapseHeader from "./components/collapse-header";
-import {SelectWithImage2} from "./components/select-with-image-2";
+import CollapseHeader from "../../components/collapse-header";
+import {SelectWithImage2} from "../../components/select-with-image-2";
 import {allroutes} from "../../app/routes.ts";
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import Table from "../../components/table";

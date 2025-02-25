@@ -11,10 +11,10 @@ import {
     options,
     optionschoose,
     optionsource,
-} from "../selectoption/selectoption";
+} from "../../../../components/selectoption/selectoption";
 import ImageWithBasePath from "../../../../components/image-with-base-path";
-import {SelectWithImage} from "../select-with-image";
-import {SelectWithImage2} from "../select-with-image-2";
+import {SelectWithImage} from "../../../../components/select-with-image";
+import {SelectWithImage2} from "../../../../components/select-with-image-2";
 import {allroutes} from "../../../../app/routes.ts";
 
 const LeadsKanban = () => {

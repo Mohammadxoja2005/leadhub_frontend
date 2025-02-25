@@ -1,5 +1,5 @@
 import {Link} from "react-router-dom";
-import {setHeaderCollapse} from "../../../../data/redux/commonSlice.tsx";
+import {setHeaderCollapse} from "../../data/redux/commonSlice.tsx";
 import {useDispatch, useSelector} from "react-redux";
 import {OverlayTrigger, Tooltip} from "react-bootstrap";
 
