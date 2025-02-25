@@ -1,10 +1,10 @@
 import React, {useState} from "react";
 import {Link} from "react-router-dom";
-import ImageWithBasePath from "../../components/image-with-base-path";
+import ImageWithBasePath from "../../../components/image-with-base-path";
 import Select from "react-select";
-import {allroutes} from "../../app/routes.ts";
-import CollapseHeader from "../../components/collapse-header";
-import {leadsData} from "../../data/json/leads.tsx";
+import {allroutes} from "../../../app/routes.ts";
+import CollapseHeader from "../../../components/collapse-header";
+import {leadsData} from "../../../data/json/leads.tsx";
 import {OverlayTrigger, Tooltip} from "react-bootstrap";
 import DefaultEditor from "react-simple-wysiwyg";
 import {Modal} from 'react-bootstrap';
@@ -14,8 +14,8 @@ import {
     documentType,
     LocaleData,
     statusList
-} from "../../components/selectoption/selectoption.ts";
-import {SelectWithImage2} from "../../components/select-with-image-2";
+} from "../../../components/selectoption/selectoption.ts";
+import {SelectWithImage2} from "../../../components/select-with-image-2";
 
 const route = allroutes;
 const LeadsDetails = () => {

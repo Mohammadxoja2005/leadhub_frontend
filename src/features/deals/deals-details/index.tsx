@@ -5,8 +5,8 @@ import Select from 'react-select'
 import {Modal} from 'react-bootstrap';
 import DefaultEditor from "react-simple-wysiwyg";
 import {useDispatch, useSelector} from 'react-redux';
-import ImageWithBasePath from "../../components/image-with-base-path";
-import CollapseHeader from "../../components/collapse-header";
+import ImageWithBasePath from "../../../components/image-with-base-path";
+import CollapseHeader from "../../../components/collapse-header";
 import {
     accountType,
     ascendingandDecending,
@@ -14,9 +14,9 @@ import {
     LocaleData,
     status,
     statusList
-} from '../../components/selectoption/selectoption';
-import {SelectWithImage2} from "../../components/select-with-image-2";
-import {allroutes} from "../../app/routes.ts";
+} from '../../../components/selectoption/selectoption.ts';
+import {SelectWithImage2} from "../../../components/select-with-image-2";
+import {allroutes} from "../../../app/routes.ts";
 
 const DealsDetails = () => {
     const [value, setValue] = useState('Write a new comment, send your team notification by typing @ followed by their name');

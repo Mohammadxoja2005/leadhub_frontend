@@ -11,11 +11,11 @@ import {
     options,
     optionschoose,
     optionsource,
-} from "../../../../components/selectoption/selectoption";
-import ImageWithBasePath from "../../../../components/image-with-base-path";
-import {SelectWithImage} from "../../../../components/select-with-image";
-import {SelectWithImage2} from "../../../../components/select-with-image-2";
-import {allroutes} from "../../../../app/routes.ts";
+} from "../../../components/selectoption/selectoption.ts";
+import ImageWithBasePath from "../../../components/image-with-base-path";
+import {SelectWithImage} from "../../../components/select-with-image";
+import {SelectWithImage2} from "../../../components/select-with-image-2";
+import {allroutes} from "../../../app/routes.ts";
 
 const LeadsKanban = () => {
     const [adduser, setAdduser] = useState(false);

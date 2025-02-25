@@ -1,9 +1,9 @@
 import React, {useState} from "react";
 import {Modal, OverlayTrigger, Tooltip} from "react-bootstrap";
 import {Link} from "react-router-dom";
-import {allroutes} from "../../app/routes.ts";
+import {allroutes} from "../../../app/routes.ts";
 import {useDispatch, useSelector} from "react-redux";
-import ImageWithBasePath from "../../components/image-with-base-path";
+import ImageWithBasePath from "../../../components/image-with-base-path";
 import Select from "react-select";
 import {
     accountType,
@@ -20,12 +20,12 @@ import {
     status,
     statusList,
     tagInputValues,
-} from "../../components/selectoption/selectoption";
+} from "../../../components/selectoption/selectoption.ts";
 import DatePicker from "react-datepicker";
 import DefaultEditor from "react-simple-wysiwyg";
-import CollapseHeader from "../../components/collapse-header";
-import {SelectWithImage} from "../../components/select-with-image";
-import {SelectWithImage2} from "../../components/select-with-image-2";
+import CollapseHeader from "../../../components/collapse-header";
+import {SelectWithImage} from "../../../components/select-with-image";
+import {SelectWithImage2} from "../../../components/select-with-image-2";
 
 const ContactDetails = () => {
     const route = allroutes;
