@@ -36,5 +36,5 @@ export const publicRoutes = [
         element: <LeadsDashboard/>,
         route: Route,
         title: "Leads Dashboard"
-    },
+    }
 ]
