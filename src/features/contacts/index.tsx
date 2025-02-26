@@ -369,14 +369,14 @@ const ContactList = () => {
                                             <div
                                                 className="d-flex align-items-center flex-wrap row-gap-2 justify-content-sm-end">
                                                 <div className="dropdown me-2">
-                                                    <Link
-                                                        to="#"
-                                                        className="dropdown-toggle"
-                                                        data-bs-toggle="dropdown"
-                                                    >
-                                                        <i className="ti ti-package-export me-2"/>
-                                                        Export
-                                                    </Link>
+                                                    {/*<Link*/}
+                                                    {/*    to="#"*/}
+                                                    {/*    className="dropdown-toggle"*/}
+                                                    {/*    data-bs-toggle="dropdown"*/}
+                                                    {/*>*/}
+                                                    {/*    <i className="ti ti-package-export me-2"/>*/}
+                                                    {/*    Export*/}
+                                                    {/*</Link>*/}
                                                     <div className="dropdown-menu  dropdown-menu-end">
                                                         <ul>
                                                             <li>
@@ -414,721 +414,721 @@ const ContactList = () => {
 
                                     {/* /Search */}
                                     {/* Filter */}
-                                    <div
-                                        className="d-flex align-items-center justify-content-between flex-wrap row-gap-2 mb-4">
-                                        <div className="d-flex align-items-center flex-wrap row-gap-2">
-                                            <div className="dropdown me-2">
-                                                <Link
-                                                    to="#"
-                                                    className="dropdown-toggle"
-                                                    data-bs-toggle="dropdown"
-                                                >
-                                                    <i className="ti ti-sort-ascending-2 me-2"/>
-                                                    Sort{" "}
-                                                </Link>
-                                                <div className="dropdown-menu  dropdown-menu-start">
-                                                    <ul>
-                                                        <li>
-                                                            <Link to="#" className="dropdown-item">
-                                                                <i className="ti ti-circle-chevron-right me-1"/>
-                                                                Ascending
-                                                            </Link>
-                                                        </li>
-                                                        <li>
-                                                            <Link to="#" className="dropdown-item">
-                                                                <i className="ti ti-circle-chevron-right me-1"/>
-                                                                Descending
-                                                            </Link>
-                                                        </li>
-                                                        <li>
-                                                            <Link to="#" className="dropdown-item">
-                                                                <i className="ti ti-circle-chevron-right me-1"/>
-                                                                Recently Viewed
-                                                            </Link>
-                                                        </li>
-                                                        <li>
-                                                            <Link to="#" className="dropdown-item">
-                                                                <i className="ti ti-circle-chevron-right me-1"/>
-                                                                Recently Added
-                                                            </Link>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <div className="icon-form">
-                        <span className="form-icon">
-                          <i className="ti ti-calendar"/>
-                        </span>
-                                                {/*<DateRangePicker initialSettings={initialSettings}>*/}
-                                                {/*    <input*/}
-                                                {/*        className="form-control bookingrange"*/}
-                                                {/*        type="text"*/}
-                                                {/*    />*/}
-                                                {/*</DateRangePicker>*/}
-                                            </div>
-                                        </div>
-                                        <div className="d-flex align-items-center flex-wrap row-gap-2">
-                                            <div className="dropdown me-2">
-                                                <Link
-                                                    to="#"
-                                                    className="btn bg-soft-purple text-purple"
-                                                    data-bs-toggle="dropdown"
-                                                    data-bs-auto-close="outside"
-                                                >
-                                                    <i className="ti ti-columns-3 me-2"/>
-                                                    Manage Columns
-                                                </Link>
-                                                <div className="dropdown-menu  dropdown-menu-md-end dropdown-md p-3">
-                                                    <h4 className="mb-2 fw-semibold">
-                                                        Want to manage datatables?
-                                                    </h4>
-                                                    <p className="mb-3">
-                                                        Please drag and drop your column to reorder your
-                                                        table and enable see option as you want.
-                                                    </p>
-                                                    <div className="border-top pt-3">
-                                                        <div
-                                                            className="d-flex align-items-center justify-content-between mb-3">
-                                                            <p className="mb-0 d-flex align-items-center">
-                                                                <i className="ti ti-grip-vertical me-2"/>
-                                                                Name
-                                                            </p>
-                                                            <div className="status-toggle">
-                                                                <input
-                                                                    type="checkbox"
-                                                                    id="col-name"
-                                                                    className="check"
-                                                                />
-                                                                <label
-                                                                    htmlFor="col-name"
-                                                                    className="checktoggle"
-                                                                />
-                                                            </div>
-                                                        </div>
-                                                        <div
-                                                            className="d-flex align-items-center justify-content-between mb-3">
-                                                            <p className="mb-0 d-flex align-items-center">
-                                                                <i className="ti ti-grip-vertical me-2"/>
-                                                                Phone
-                                                            </p>
-                                                            <div className="status-toggle">
-                                                                <input
-                                                                    type="checkbox"
-                                                                    id="col-phone"
-                                                                    className="check"
-                                                                />
-                                                                <label
-                                                                    htmlFor="col-phone"
-                                                                    className="checktoggle"
-                                                                />
-                                                            </div>
-                                                        </div>
-                                                        <div
-                                                            className="d-flex align-items-center justify-content-between mb-3">
-                                                            <p className="mb-0 d-flex align-items-center">
-                                                                <i className="ti ti-grip-vertical me-2"/>
-                                                                Email
-                                                            </p>
-                                                            <div className="status-toggle">
-                                                                <input
-                                                                    type="checkbox"
-                                                                    id="col-email"
-                                                                    className="check"
-                                                                />
-                                                                <label
-                                                                    htmlFor="col-email"
-                                                                    className="checktoggle"
-                                                                />
-                                                            </div>
-                                                        </div>
-                                                        <div
-                                                            className="d-flex align-items-center justify-content-between mb-3">
-                                                            <p className="mb-0 d-flex align-items-center">
-                                                                <i className="ti ti-grip-vertical me-2"/>
-                                                                Tags
-                                                            </p>
-                                                            <div className="status-toggle">
-                                                                <input
-                                                                    type="checkbox"
-                                                                    id="col-tag"
-                                                                    className="check"
-                                                                />
-                                                                <label
-                                                                    htmlFor="col-tag"
-                                                                    className="checktoggle"
-                                                                />
-                                                            </div>
-                                                        </div>
-                                                        <div
-                                                            className="d-flex align-items-center justify-content-between mb-3">
-                                                            <p className="mb-0 d-flex align-items-center">
-                                                                <i className="ti ti-grip-vertical me-2"/>
-                                                                Location
-                                                            </p>
-                                                            <div className="status-toggle">
-                                                                <input
-                                                                    type="checkbox"
-                                                                    id="col-loc"
-                                                                    className="check"
-                                                                />
-                                                                <label
-                                                                    htmlFor="col-loc"
-                                                                    className="checktoggle"
-                                                                />
-                                                            </div>
-                                                        </div>
-                                                        <div
-                                                            className="d-flex align-items-center justify-content-between mb-3">
-                                                            <p className="mb-0 d-flex align-items-center">
-                                                                <i className="ti ti-grip-vertical me-2"/>
-                                                                Rating
-                                                            </p>
-                                                            <div className="status-toggle">
-                                                                <input
-                                                                    type="checkbox"
-                                                                    id="col-rate"
-                                                                    className="check"
-                                                                />
-                                                                <label
-                                                                    htmlFor="col-rate"
-                                                                    className="checktoggle"
-                                                                />
-                                                            </div>
-                                                        </div>
-                                                        <div
-                                                            className="d-flex align-items-center justify-content-between mb-3">
-                                                            <p className="mb-0 d-flex align-items-center">
-                                                                <i className="ti ti-grip-vertical me-2"/>
-                                                                Owner
-                                                            </p>
-                                                            <div className="status-toggle">
-                                                                <input
-                                                                    type="checkbox"
-                                                                    id="col-owner"
-                                                                    className="check"
-                                                                />
-                                                                <label
-                                                                    htmlFor="col-owner"
-                                                                    className="checktoggle"
-                                                                />
-                                                            </div>
-                                                        </div>
-                                                        <div
-                                                            className="d-flex align-items-center justify-content-between mb-3">
-                                                            <p className="mb-0 d-flex align-items-center">
-                                                                <i className="ti ti-grip-vertical me-2"/>
-                                                                Contact
-                                                            </p>
-                                                            <div className="status-toggle">
-                                                                <input
-                                                                    type="checkbox"
-                                                                    id="col-contact"
-                                                                    className="check"
-                                                                    defaultChecked
-                                                                />
-                                                                <label
-                                                                    htmlFor="col-contact"
-                                                                    className="checktoggle"
-                                                                />
-                                                            </div>
-                                                        </div>
-                                                        <div
-                                                            className="d-flex align-items-center justify-content-between mb-3">
-                                                            <p className="mb-0 d-flex align-items-center">
-                                                                <i className="ti ti-grip-vertical me-2"/>
-                                                                Status
-                                                            </p>
-                                                            <div className="status-toggle">
-                                                                <input
-                                                                    type="checkbox"
-                                                                    id="col-status"
-                                                                    className="check"
-                                                                />
-                                                                <label
-                                                                    htmlFor="col-status"
-                                                                    className="checktoggle"
-                                                                />
-                                                            </div>
-                                                        </div>
-                                                        <div
-                                                            className="d-flex align-items-center justify-content-between">
-                                                            <p className="mb-0 d-flex align-items-center">
-                                                                <i className="ti ti-grip-vertical me-2"/>
-                                                                Action
-                                                            </p>
-                                                            <div className="status-toggle">
-                                                                <input
-                                                                    type="checkbox"
-                                                                    id="col-action"
-                                                                    className="check"
-                                                                />
-                                                                <label
-                                                                    htmlFor="col-action"
-                                                                    className="checktoggle"
-                                                                />
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div className="form-sorts dropdown me-2">
-                                                <Link
-                                                    to="#"
-                                                    data-bs-toggle="dropdown"
-                                                    data-bs-auto-close="outside"
-                                                >
-                                                    <i className="ti ti-filter-share"/>
-                                                    Filter
-                                                </Link>
-                                                <div
-                                                    className="filter-dropdown-menu dropdown-menu  dropdown-menu-md-end p-3">
-                                                    <div className="filter-set-view">
-                                                        <div className="filter-set-head">
-                                                            <h4>
-                                                                <i className="ti ti-filter-share"/>
-                                                                Filter
-                                                            </h4>
-                                                        </div>
-                                                        <div className="accordion" id="accordionExample">
-                                                            <div className="filter-set-content">
-                                                                <div className="filter-set-content-head">
-                                                                    <Link
-                                                                        to="#"
-                                                                        data-bs-toggle="collapse"
-                                                                        data-bs-target="#collapseTwo"
-                                                                        aria-expanded="true"
-                                                                        aria-controls="collapseTwo"
-                                                                    >
-                                                                        Country
-                                                                    </Link>
-                                                                </div>
-                                                                <div
-                                                                    className="filter-set-contents accordion-collapse collapse show"
-                                                                    id="collapseTwo"
-                                                                    data-bs-parent="#accordionExample"
-                                                                >
-                                                                    <div className="filter-content-list">
-                                                                        <div className="mb-2 icon-form">
-                                      <span className="form-icon">
-                                        <i className="ti ti-search"/>
-                                      </span>
-                                                                            <input
-                                                                                type="text"
-                                                                                className="form-control"
-                                                                                placeholder="Search Country"
-                                                                            />
-                                                                        </div>
-                                                                        <ul>
-                                                                            <li>
-                                                                                <div className="filter-checks">
-                                                                                    <label className="checkboxs">
-                                                                                        <input type="checkbox"/>
-                                                                                        <span className="checkmarks"/>
-                                                                                        India
-                                                                                    </label>
-                                                                                </div>
-                                                                            </li>
-                                                                            <li>
-                                                                                <div className="filter-checks">
-                                                                                    <label className="checkboxs">
-                                                                                        <input type="checkbox"/>
-                                                                                        <span className="checkmarks"/>
-                                                                                        USA
-                                                                                    </label>
-                                                                                </div>
-                                                                            </li>
-                                                                            <li>
-                                                                                <div className="filter-checks">
-                                                                                    <label className="checkboxs">
-                                                                                        <input type="checkbox"/>
-                                                                                        <span className="checkmarks"/>
-                                                                                        France
-                                                                                    </label>
-                                                                                </div>
-                                                                            </li>
-                                                                            <li>
-                                                                                <div className="filter-checks">
-                                                                                    <label className="checkboxs">
-                                                                                        <input type="checkbox"/>
-                                                                                        <span className="checkmarks"/>
-                                                                                        United Kingdom
-                                                                                    </label>
-                                                                                </div>
-                                                                            </li>
-                                                                            <li>
-                                                                                <div className="filter-checks">
-                                                                                    <label className="checkboxs">
-                                                                                        <input type="checkbox"/>
-                                                                                        <span className="checkmarks"/>
-                                                                                        UAE
-                                                                                    </label>
-                                                                                </div>
-                                                                            </li>
-                                                                            <li>
-                                                                                <div className="filter-checks">
-                                                                                    <label className="checkboxs">
-                                                                                        <input type="checkbox"/>
-                                                                                        <span className="checkmarks"/>
-                                                                                        Italy
-                                                                                    </label>
-                                                                                </div>
-                                                                            </li>
-                                                                            <li>
-                                                                                <div className="filter-checks">
-                                                                                    <label className="checkboxs">
-                                                                                        <input type="checkbox"/>
-                                                                                        <span className="checkmarks"/>
-                                                                                        Japan
-                                                                                    </label>
-                                                                                </div>
-                                                                            </li>
-                                                                            <li>
-                                                                                <div className="filter-checks">
-                                                                                    <label className="checkboxs">
-                                                                                        <input type="checkbox"/>
-                                                                                        <span className="checkmarks"/>
-                                                                                        Germany
-                                                                                    </label>
-                                                                                </div>
-                                                                            </li>
-                                                                        </ul>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div className="filter-set-content">
-                                                                <div className="filter-set-content-head">
-                                                                    <Link
-                                                                        to="#"
-                                                                        className="collapsed"
-                                                                        data-bs-toggle="collapse"
-                                                                        data-bs-target="#owner"
-                                                                        aria-expanded="false"
-                                                                        aria-controls="owner"
-                                                                    >
-                                                                        Owner
-                                                                    </Link>
-                                                                </div>
-                                                                <div
-                                                                    className="filter-set-contents accordion-collapse collapse"
-                                                                    id="owner"
-                                                                    data-bs-parent="#accordionExample"
-                                                                >
-                                                                    <div className="filter-content-list">
-                                                                        <div className="mb-2 icon-form">
-                                      <span className="form-icon">
-                                        <i className="ti ti-search"/>
-                                      </span>
-                                                                            <input
-                                                                                type="text"
-                                                                                className="form-control"
-                                                                                placeholder="Search Owner"
-                                                                            />
-                                                                        </div>
-                                                                        <ul>
-                                                                            <li>
-                                                                                <div className="filter-checks">
-                                                                                    <label className="checkboxs">
-                                                                                        <input
-                                                                                            type="checkbox"
-                                                                                            defaultChecked
-                                                                                        />
-                                                                                        <span className="checkmarks"/>
-                                                                                        Hendry
-                                                                                    </label>
-                                                                                </div>
-                                                                            </li>
-                                                                            <li>
-                                                                                <div className="filter-checks">
-                                                                                    <label className="checkboxs">
-                                                                                        <input type="checkbox"/>
-                                                                                        <span className="checkmarks"/>
-                                                                                        Guillory
-                                                                                    </label>
-                                                                                </div>
-                                                                            </li>
-                                                                            <li>
-                                                                                <div className="filter-checks">
-                                                                                    <label className="checkboxs">
-                                                                                        <input type="checkbox"/>
-                                                                                        <span className="checkmarks"/>
-                                                                                        Jami
-                                                                                    </label>
-                                                                                </div>
-                                                                            </li>
-                                                                            <li>
-                                                                                <div className="filter-checks">
-                                                                                    <label className="checkboxs">
-                                                                                        <input type="checkbox"/>
-                                                                                        <span className="checkmarks"/>
-                                                                                        Theresa
-                                                                                    </label>
-                                                                                </div>
-                                                                            </li>
-                                                                            <li>
-                                                                                <div className="filter-checks">
-                                                                                    <label className="checkboxs">
-                                                                                        <input type="checkbox"/>
-                                                                                        <span className="checkmarks"/>
-                                                                                        Espinosa
-                                                                                    </label>
-                                                                                </div>
-                                                                            </li>
-                                                                        </ul>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div className="filter-set-content">
-                                                                <div className="filter-set-content-head">
-                                                                    <Link
-                                                                        to="#"
-                                                                        className="collapsed"
-                                                                        data-bs-toggle="collapse"
-                                                                        data-bs-target="#Status"
-                                                                        aria-expanded="false"
-                                                                        aria-controls="Status"
-                                                                    >
-                                                                        Status
-                                                                    </Link>
-                                                                </div>
-                                                                <div
-                                                                    className="filter-set-contents accordion-collapse collapse"
-                                                                    id="Status"
-                                                                    data-bs-parent="#accordionExample"
-                                                                >
-                                                                    <div className="filter-content-list">
-                                                                        <ul>
-                                                                            <li>
-                                                                                <div className="filter-checks">
-                                                                                    <label className="checkboxs">
-                                                                                        <input
-                                                                                            type="checkbox"
-                                                                                            defaultChecked
-                                                                                        />
-                                                                                        <span className="checkmarks"/>
-                                                                                        Active
-                                                                                    </label>
-                                                                                </div>
-                                                                            </li>
-                                                                            <li>
-                                                                                <div className="filter-checks">
-                                                                                    <label className="checkboxs">
-                                                                                        <input type="checkbox"/>
-                                                                                        <span className="checkmarks"/>
-                                                                                        Inactive
-                                                                                    </label>
-                                                                                </div>
-                                                                            </li>
-                                                                        </ul>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div className="filter-set-content">
-                                                                <div className="filter-set-content-head">
-                                                                    <Link
-                                                                        to="#"
-                                                                        className="collapsed"
-                                                                        data-bs-toggle="collapse"
-                                                                        data-bs-target="#collapseOne"
-                                                                        aria-expanded="false"
-                                                                        aria-controls="collapseOne"
-                                                                    >
-                                                                        Rating
-                                                                    </Link>
-                                                                </div>
-                                                                <div
-                                                                    className="filter-set-contents accordion-collapse collapse"
-                                                                    id="collapseOne"
-                                                                    data-bs-parent="#accordionExample"
-                                                                >
-                                                                    <div className="filter-content-list">
-                                                                        <ul>
-                                                                            <li>
-                                                                                <div className="filter-checks">
-                                                                                    <label className="checkboxs">
-                                                                                        <input
-                                                                                            type="checkbox"
-                                                                                            defaultChecked
-                                                                                        />
-                                                                                        <span className="checkmarks"/>
-                                                                                        <span className="rating">
-                                              <i className="fa fa-star filled"/>
-                                              <i className="fa fa-star filled"/>
-                                              <i className="fa fa-star filled"/>
-                                              <i className="fa fa-star filled"/>
-                                              <i className="fa fa-star filled"/>
-                                              <span>5.0</span>
-                                            </span>
-                                                                                    </label>
-                                                                                </div>
-                                                                            </li>
-                                                                            <li>
-                                                                                <div className="filter-checks">
-                                                                                    <label className="checkboxs">
-                                                                                        <input type="checkbox"/>
-                                                                                        <span className="checkmarks"/>
-                                                                                        <span className="rating">
-                                              <i className="fa fa-star filled"/>
-                                              <i className="fa fa-star filled"/>
-                                              <i className="fa fa-star filled"/>
-                                              <i className="fa fa-star filled"/>
-                                              <i className="fa fa-star"/>
-                                              <span>4.0</span>
-                                            </span>
-                                                                                    </label>
-                                                                                </div>
-                                                                            </li>
-                                                                            <li>
-                                                                                <div className="filter-checks">
-                                                                                    <label className="checkboxs">
-                                                                                        <input type="checkbox"/>
-                                                                                        <span className="checkmarks"/>
-                                                                                        <span className="rating">
-                                              <i className="fa fa-star filled"/>
-                                              <i className="fa fa-star filled"/>
-                                              <i className="fa fa-star filled"/>
-                                              <i className="fa fa-star"/>
-                                              <i className="fa fa-star"/>
-                                              <span>3.0</span>
-                                            </span>
-                                                                                    </label>
-                                                                                </div>
-                                                                            </li>
-                                                                            <li>
-                                                                                <div className="filter-checks">
-                                                                                    <label className="checkboxs">
-                                                                                        <input type="checkbox"/>
-                                                                                        <span className="checkmarks"/>
-                                                                                        <span className="rating">
-                                              <i className="fa fa-star filled"/>
-                                              <i className="fa fa-star filled"/>
-                                              <i className="fa fa-star"/>
-                                              <i className="fa fa-star"/>
-                                              <i className="fa fa-star"/>
-                                              <span>2.0</span>
-                                            </span>
-                                                                                    </label>
-                                                                                </div>
-                                                                            </li>
-                                                                            <li>
-                                                                                <div className="filter-checks">
-                                                                                    <label className="checkboxs">
-                                                                                        <input type="checkbox"/>
-                                                                                        <span className="checkmarks"/>
-                                                                                        <span className="rating">
-                                              <i className="fa fa-star filled"/>
-                                              <i className="fa fa-star"/>
-                                              <i className="fa fa-star"/>
-                                              <i className="fa fa-star"/>
-                                              <i className="fa fa-star"/>
-                                              <span>1.0</span>
-                                            </span>
-                                                                                    </label>
-                                                                                </div>
-                                                                            </li>
-                                                                        </ul>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div className="filter-set-content">
-                                                                <div className="filter-set-content-head">
-                                                                    <Link
-                                                                        to="#"
-                                                                        className="collapsed"
-                                                                        data-bs-toggle="collapse"
-                                                                        data-bs-target="#collapseThree"
-                                                                        aria-expanded="false"
-                                                                        aria-controls="collapseThree"
-                                                                    >
-                                                                        Tags
-                                                                    </Link>
-                                                                </div>
-                                                                <div
-                                                                    className="filter-set-contents accordion-collapse collapse"
-                                                                    id="collapseThree"
-                                                                    data-bs-parent="#accordionExample"
-                                                                >
-                                                                    <div className="filter-content-list">
-                                                                        <ul>
-                                                                            <li>
-                                                                                <div className="filter-checks">
-                                                                                    <label className="checkboxs">
-                                                                                        <input
-                                                                                            type="checkbox"
-                                                                                            defaultChecked
-                                                                                        />
-                                                                                        <span className="checkmarks"/>
-                                                                                        Promotion
-                                                                                    </label>
-                                                                                </div>
-                                                                            </li>
-                                                                            <li>
-                                                                                <div className="filter-checks">
-                                                                                    <label className="checkboxs">
-                                                                                        <input type="checkbox"/>
-                                                                                        <span className="checkmarks"/>
-                                                                                        Rated
-                                                                                    </label>
-                                                                                </div>
-                                                                            </li>
-                                                                            <li>
-                                                                                <div className="filter-checks">
-                                                                                    <label className="checkboxs">
-                                                                                        <input type="checkbox"/>
-                                                                                        <span className="checkmarks"/>
-                                                                                        Rejected
-                                                                                    </label>
-                                                                                </div>
-                                                                            </li>
-                                                                            <li>
-                                                                                <div className="filter-checks">
-                                                                                    <label className="checkboxs">
-                                                                                        <input type="checkbox"/>
-                                                                                        <span className="checkmarks"/>
-                                                                                        Collab
-                                                                                    </label>
-                                                                                </div>
-                                                                            </li>
-                                                                            <li>
-                                                                                <div className="filter-checks">
-                                                                                    <label className="checkboxs">
-                                                                                        <input type="checkbox"/>
-                                                                                        <span className="checkmarks"/>
-                                                                                        Calls
-                                                                                    </label>
-                                                                                </div>
-                                                                            </li>
-                                                                        </ul>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div className="filter-reset-btns">
-                                                            <div className="row">
-                                                                <div className="col-6">
-                                                                    <Link to="#" className="btn btn-light">
-                                                                        Reset
-                                                                    </Link>
-                                                                </div>
-                                                                <div className="col-6">
-                                                                    <Link to="#" className="btn btn-primary">
-                                                                        Filter
-                                                                    </Link>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div className="view-icons">
-                                                <Link to="#" className="active">
-                                                    <i className="ti ti-list-tree"/>
-                                                </Link>
-                                                <Link to={route.contactGrid}>
-                                                    <i className="ti ti-grid-dots"/>
-                                                </Link>
-                                            </div>
-                                        </div>
-                                    </div>
+                        {/*            <div*/}
+                        {/*                className="d-flex align-items-center justify-content-between flex-wrap row-gap-2 mb-4">*/}
+                        {/*                <div className="d-flex align-items-center flex-wrap row-gap-2">*/}
+                        {/*                    <div className="dropdown me-2">*/}
+                        {/*                        <Link*/}
+                        {/*                            to="#"*/}
+                        {/*                            className="dropdown-toggle"*/}
+                        {/*                            data-bs-toggle="dropdown"*/}
+                        {/*                        >*/}
+                        {/*                            <i className="ti ti-sort-ascending-2 me-2"/>*/}
+                        {/*                            Sort{" "}*/}
+                        {/*                        </Link>*/}
+                        {/*                        <div className="dropdown-menu  dropdown-menu-start">*/}
+                        {/*                            <ul>*/}
+                        {/*                                <li>*/}
+                        {/*                                    <Link to="#" className="dropdown-item">*/}
+                        {/*                                        <i className="ti ti-circle-chevron-right me-1"/>*/}
+                        {/*                                        Ascending*/}
+                        {/*                                    </Link>*/}
+                        {/*                                </li>*/}
+                        {/*                                <li>*/}
+                        {/*                                    <Link to="#" className="dropdown-item">*/}
+                        {/*                                        <i className="ti ti-circle-chevron-right me-1"/>*/}
+                        {/*                                        Descending*/}
+                        {/*                                    </Link>*/}
+                        {/*                                </li>*/}
+                        {/*                                <li>*/}
+                        {/*                                    <Link to="#" className="dropdown-item">*/}
+                        {/*                                        <i className="ti ti-circle-chevron-right me-1"/>*/}
+                        {/*                                        Recently Viewed*/}
+                        {/*                                    </Link>*/}
+                        {/*                                </li>*/}
+                        {/*                                <li>*/}
+                        {/*                                    <Link to="#" className="dropdown-item">*/}
+                        {/*                                        <i className="ti ti-circle-chevron-right me-1"/>*/}
+                        {/*                                        Recently Added*/}
+                        {/*                                    </Link>*/}
+                        {/*                                </li>*/}
+                        {/*                            </ul>*/}
+                        {/*                        </div>*/}
+                        {/*                    </div>*/}
+                        {/*                    <div className="icon-form">*/}
+                        {/*<span className="form-icon">*/}
+                        {/*  <i className="ti ti-calendar"/>*/}
+                        {/*</span>*/}
+                        {/*                        /!*<DateRangePicker initialSettings={initialSettings}>*!/*/}
+                        {/*                        /!*    <input*!/*/}
+                        {/*                        /!*        className="form-control bookingrange"*!/*/}
+                        {/*                        /!*        type="text"*!/*/}
+                        {/*                        /!*    />*!/*/}
+                        {/*                        /!*</DateRangePicker>*!/*/}
+                        {/*                    </div>*/}
+                        {/*                </div>*/}
+                        {/*                <div className="d-flex align-items-center flex-wrap row-gap-2">*/}
+                        {/*                    <div className="dropdown me-2">*/}
+                        {/*                        <Link*/}
+                        {/*                            to="#"*/}
+                        {/*                            className="btn bg-soft-purple text-purple"*/}
+                        {/*                            data-bs-toggle="dropdown"*/}
+                        {/*                            data-bs-auto-close="outside"*/}
+                        {/*                        >*/}
+                        {/*                            <i className="ti ti-columns-3 me-2"/>*/}
+                        {/*                            Manage Columns*/}
+                        {/*                        </Link>*/}
+                        {/*                        <div className="dropdown-menu  dropdown-menu-md-end dropdown-md p-3">*/}
+                        {/*                            <h4 className="mb-2 fw-semibold">*/}
+                        {/*                                Want to manage datatables?*/}
+                        {/*                            </h4>*/}
+                        {/*                            <p className="mb-3">*/}
+                        {/*                                Please drag and drop your column to reorder your*/}
+                        {/*                                table and enable see option as you want.*/}
+                        {/*                            </p>*/}
+                        {/*                            <div className="border-top pt-3">*/}
+                        {/*                                <div*/}
+                        {/*                                    className="d-flex align-items-center justify-content-between mb-3">*/}
+                        {/*                                    <p className="mb-0 d-flex align-items-center">*/}
+                        {/*                                        <i className="ti ti-grip-vertical me-2"/>*/}
+                        {/*                                        Name*/}
+                        {/*                                    </p>*/}
+                        {/*                                    <div className="status-toggle">*/}
+                        {/*                                        <input*/}
+                        {/*                                            type="checkbox"*/}
+                        {/*                                            id="col-name"*/}
+                        {/*                                            className="check"*/}
+                        {/*                                        />*/}
+                        {/*                                        <label*/}
+                        {/*                                            htmlFor="col-name"*/}
+                        {/*                                            className="checktoggle"*/}
+                        {/*                                        />*/}
+                        {/*                                    </div>*/}
+                        {/*                                </div>*/}
+                        {/*                                <div*/}
+                        {/*                                    className="d-flex align-items-center justify-content-between mb-3">*/}
+                        {/*                                    <p className="mb-0 d-flex align-items-center">*/}
+                        {/*                                        <i className="ti ti-grip-vertical me-2"/>*/}
+                        {/*                                        Phone*/}
+                        {/*                                    </p>*/}
+                        {/*                                    <div className="status-toggle">*/}
+                        {/*                                        <input*/}
+                        {/*                                            type="checkbox"*/}
+                        {/*                                            id="col-phone"*/}
+                        {/*                                            className="check"*/}
+                        {/*                                        />*/}
+                        {/*                                        <label*/}
+                        {/*                                            htmlFor="col-phone"*/}
+                        {/*                                            className="checktoggle"*/}
+                        {/*                                        />*/}
+                        {/*                                    </div>*/}
+                        {/*                                </div>*/}
+                        {/*                                <div*/}
+                        {/*                                    className="d-flex align-items-center justify-content-between mb-3">*/}
+                        {/*                                    <p className="mb-0 d-flex align-items-center">*/}
+                        {/*                                        <i className="ti ti-grip-vertical me-2"/>*/}
+                        {/*                                        Email*/}
+                        {/*                                    </p>*/}
+                        {/*                                    <div className="status-toggle">*/}
+                        {/*                                        <input*/}
+                        {/*                                            type="checkbox"*/}
+                        {/*                                            id="col-email"*/}
+                        {/*                                            className="check"*/}
+                        {/*                                        />*/}
+                        {/*                                        <label*/}
+                        {/*                                            htmlFor="col-email"*/}
+                        {/*                                            className="checktoggle"*/}
+                        {/*                                        />*/}
+                        {/*                                    </div>*/}
+                        {/*                                </div>*/}
+                        {/*                                <div*/}
+                        {/*                                    className="d-flex align-items-center justify-content-between mb-3">*/}
+                        {/*                                    <p className="mb-0 d-flex align-items-center">*/}
+                        {/*                                        <i className="ti ti-grip-vertical me-2"/>*/}
+                        {/*                                        Tags*/}
+                        {/*                                    </p>*/}
+                        {/*                                    <div className="status-toggle">*/}
+                        {/*                                        <input*/}
+                        {/*                                            type="checkbox"*/}
+                        {/*                                            id="col-tag"*/}
+                        {/*                                            className="check"*/}
+                        {/*                                        />*/}
+                        {/*                                        <label*/}
+                        {/*                                            htmlFor="col-tag"*/}
+                        {/*                                            className="checktoggle"*/}
+                        {/*                                        />*/}
+                        {/*                                    </div>*/}
+                        {/*                                </div>*/}
+                        {/*                                <div*/}
+                        {/*                                    className="d-flex align-items-center justify-content-between mb-3">*/}
+                        {/*                                    <p className="mb-0 d-flex align-items-center">*/}
+                        {/*                                        <i className="ti ti-grip-vertical me-2"/>*/}
+                        {/*                                        Location*/}
+                        {/*                                    </p>*/}
+                        {/*                                    <div className="status-toggle">*/}
+                        {/*                                        <input*/}
+                        {/*                                            type="checkbox"*/}
+                        {/*                                            id="col-loc"*/}
+                        {/*                                            className="check"*/}
+                        {/*                                        />*/}
+                        {/*                                        <label*/}
+                        {/*                                            htmlFor="col-loc"*/}
+                        {/*                                            className="checktoggle"*/}
+                        {/*                                        />*/}
+                        {/*                                    </div>*/}
+                        {/*                                </div>*/}
+                        {/*                                <div*/}
+                        {/*                                    className="d-flex align-items-center justify-content-between mb-3">*/}
+                        {/*                                    <p className="mb-0 d-flex align-items-center">*/}
+                        {/*                                        <i className="ti ti-grip-vertical me-2"/>*/}
+                        {/*                                        Rating*/}
+                        {/*                                    </p>*/}
+                        {/*                                    <div className="status-toggle">*/}
+                        {/*                                        <input*/}
+                        {/*                                            type="checkbox"*/}
+                        {/*                                            id="col-rate"*/}
+                        {/*                                            className="check"*/}
+                        {/*                                        />*/}
+                        {/*                                        <label*/}
+                        {/*                                            htmlFor="col-rate"*/}
+                        {/*                                            className="checktoggle"*/}
+                        {/*                                        />*/}
+                        {/*                                    </div>*/}
+                        {/*                                </div>*/}
+                        {/*                                <div*/}
+                        {/*                                    className="d-flex align-items-center justify-content-between mb-3">*/}
+                        {/*                                    <p className="mb-0 d-flex align-items-center">*/}
+                        {/*                                        <i className="ti ti-grip-vertical me-2"/>*/}
+                        {/*                                        Owner*/}
+                        {/*                                    </p>*/}
+                        {/*                                    <div className="status-toggle">*/}
+                        {/*                                        <input*/}
+                        {/*                                            type="checkbox"*/}
+                        {/*                                            id="col-owner"*/}
+                        {/*                                            className="check"*/}
+                        {/*                                        />*/}
+                        {/*                                        <label*/}
+                        {/*                                            htmlFor="col-owner"*/}
+                        {/*                                            className="checktoggle"*/}
+                        {/*                                        />*/}
+                        {/*                                    </div>*/}
+                        {/*                                </div>*/}
+                        {/*                                <div*/}
+                        {/*                                    className="d-flex align-items-center justify-content-between mb-3">*/}
+                        {/*                                    <p className="mb-0 d-flex align-items-center">*/}
+                        {/*                                        <i className="ti ti-grip-vertical me-2"/>*/}
+                        {/*                                        Contact*/}
+                        {/*                                    </p>*/}
+                        {/*                                    <div className="status-toggle">*/}
+                        {/*                                        <input*/}
+                        {/*                                            type="checkbox"*/}
+                        {/*                                            id="col-contact"*/}
+                        {/*                                            className="check"*/}
+                        {/*                                            defaultChecked*/}
+                        {/*                                        />*/}
+                        {/*                                        <label*/}
+                        {/*                                            htmlFor="col-contact"*/}
+                        {/*                                            className="checktoggle"*/}
+                        {/*                                        />*/}
+                        {/*                                    </div>*/}
+                        {/*                                </div>*/}
+                        {/*                                <div*/}
+                        {/*                                    className="d-flex align-items-center justify-content-between mb-3">*/}
+                        {/*                                    <p className="mb-0 d-flex align-items-center">*/}
+                        {/*                                        <i className="ti ti-grip-vertical me-2"/>*/}
+                        {/*                                        Status*/}
+                        {/*                                    </p>*/}
+                        {/*                                    <div className="status-toggle">*/}
+                        {/*                                        <input*/}
+                        {/*                                            type="checkbox"*/}
+                        {/*                                            id="col-status"*/}
+                        {/*                                            className="check"*/}
+                        {/*                                        />*/}
+                        {/*                                        <label*/}
+                        {/*                                            htmlFor="col-status"*/}
+                        {/*                                            className="checktoggle"*/}
+                        {/*                                        />*/}
+                        {/*                                    </div>*/}
+                        {/*                                </div>*/}
+                        {/*                                <div*/}
+                        {/*                                    className="d-flex align-items-center justify-content-between">*/}
+                        {/*                                    <p className="mb-0 d-flex align-items-center">*/}
+                        {/*                                        <i className="ti ti-grip-vertical me-2"/>*/}
+                        {/*                                        Action*/}
+                        {/*                                    </p>*/}
+                        {/*                                    <div className="status-toggle">*/}
+                        {/*                                        <input*/}
+                        {/*                                            type="checkbox"*/}
+                        {/*                                            id="col-action"*/}
+                        {/*                                            className="check"*/}
+                        {/*                                        />*/}
+                        {/*                                        <label*/}
+                        {/*                                            htmlFor="col-action"*/}
+                        {/*                                            className="checktoggle"*/}
+                        {/*                                        />*/}
+                        {/*                                    </div>*/}
+                        {/*                                </div>*/}
+                        {/*                            </div>*/}
+                        {/*                        </div>*/}
+                        {/*                    </div>*/}
+                        {/*                    <div className="form-sorts dropdown me-2">*/}
+                        {/*                        <Link*/}
+                        {/*                            to="#"*/}
+                        {/*                            data-bs-toggle="dropdown"*/}
+                        {/*                            data-bs-auto-close="outside"*/}
+                        {/*                        >*/}
+                        {/*                            <i className="ti ti-filter-share"/>*/}
+                        {/*                            Filter*/}
+                        {/*                        </Link>*/}
+                        {/*                        <div*/}
+                        {/*                            className="filter-dropdown-menu dropdown-menu  dropdown-menu-md-end p-3">*/}
+                        {/*                            <div className="filter-set-view">*/}
+                        {/*                                <div className="filter-set-head">*/}
+                        {/*                                    <h4>*/}
+                        {/*                                        <i className="ti ti-filter-share"/>*/}
+                        {/*                                        Filter*/}
+                        {/*                                    </h4>*/}
+                        {/*                                </div>*/}
+                        {/*                                <div className="accordion" id="accordionExample">*/}
+                        {/*                                    <div className="filter-set-content">*/}
+                        {/*                                        <div className="filter-set-content-head">*/}
+                        {/*                                            <Link*/}
+                        {/*                                                to="#"*/}
+                        {/*                                                data-bs-toggle="collapse"*/}
+                        {/*                                                data-bs-target="#collapseTwo"*/}
+                        {/*                                                aria-expanded="true"*/}
+                        {/*                                                aria-controls="collapseTwo"*/}
+                        {/*                                            >*/}
+                        {/*                                                Country*/}
+                        {/*                                            </Link>*/}
+                        {/*                                        </div>*/}
+                        {/*                                        <div*/}
+                        {/*                                            className="filter-set-contents accordion-collapse collapse show"*/}
+                        {/*                                            id="collapseTwo"*/}
+                        {/*                                            data-bs-parent="#accordionExample"*/}
+                        {/*                                        >*/}
+                        {/*                                            <div className="filter-content-list">*/}
+                        {/*                                                <div className="mb-2 icon-form">*/}
+                        {/*              <span className="form-icon">*/}
+                        {/*                <i className="ti ti-search"/>*/}
+                        {/*              </span>*/}
+                        {/*                                                    <input*/}
+                        {/*                                                        type="text"*/}
+                        {/*                                                        className="form-control"*/}
+                        {/*                                                        placeholder="Search Country"*/}
+                        {/*                                                    />*/}
+                        {/*                                                </div>*/}
+                        {/*                                                <ul>*/}
+                        {/*                                                    <li>*/}
+                        {/*                                                        <div className="filter-checks">*/}
+                        {/*                                                            <label className="checkboxs">*/}
+                        {/*                                                                <input type="checkbox"/>*/}
+                        {/*                                                                <span className="checkmarks"/>*/}
+                        {/*                                                                India*/}
+                        {/*                                                            </label>*/}
+                        {/*                                                        </div>*/}
+                        {/*                                                    </li>*/}
+                        {/*                                                    <li>*/}
+                        {/*                                                        <div className="filter-checks">*/}
+                        {/*                                                            <label className="checkboxs">*/}
+                        {/*                                                                <input type="checkbox"/>*/}
+                        {/*                                                                <span className="checkmarks"/>*/}
+                        {/*                                                                USA*/}
+                        {/*                                                            </label>*/}
+                        {/*                                                        </div>*/}
+                        {/*                                                    </li>*/}
+                        {/*                                                    <li>*/}
+                        {/*                                                        <div className="filter-checks">*/}
+                        {/*                                                            <label className="checkboxs">*/}
+                        {/*                                                                <input type="checkbox"/>*/}
+                        {/*                                                                <span className="checkmarks"/>*/}
+                        {/*                                                                France*/}
+                        {/*                                                            </label>*/}
+                        {/*                                                        </div>*/}
+                        {/*                                                    </li>*/}
+                        {/*                                                    <li>*/}
+                        {/*                                                        <div className="filter-checks">*/}
+                        {/*                                                            <label className="checkboxs">*/}
+                        {/*                                                                <input type="checkbox"/>*/}
+                        {/*                                                                <span className="checkmarks"/>*/}
+                        {/*                                                                United Kingdom*/}
+                        {/*                                                            </label>*/}
+                        {/*                                                        </div>*/}
+                        {/*                                                    </li>*/}
+                        {/*                                                    <li>*/}
+                        {/*                                                        <div className="filter-checks">*/}
+                        {/*                                                            <label className="checkboxs">*/}
+                        {/*                                                                <input type="checkbox"/>*/}
+                        {/*                                                                <span className="checkmarks"/>*/}
+                        {/*                                                                UAE*/}
+                        {/*                                                            </label>*/}
+                        {/*                                                        </div>*/}
+                        {/*                                                    </li>*/}
+                        {/*                                                    <li>*/}
+                        {/*                                                        <div className="filter-checks">*/}
+                        {/*                                                            <label className="checkboxs">*/}
+                        {/*                                                                <input type="checkbox"/>*/}
+                        {/*                                                                <span className="checkmarks"/>*/}
+                        {/*                                                                Italy*/}
+                        {/*                                                            </label>*/}
+                        {/*                                                        </div>*/}
+                        {/*                                                    </li>*/}
+                        {/*                                                    <li>*/}
+                        {/*                                                        <div className="filter-checks">*/}
+                        {/*                                                            <label className="checkboxs">*/}
+                        {/*                                                                <input type="checkbox"/>*/}
+                        {/*                                                                <span className="checkmarks"/>*/}
+                        {/*                                                                Japan*/}
+                        {/*                                                            </label>*/}
+                        {/*                                                        </div>*/}
+                        {/*                                                    </li>*/}
+                        {/*                                                    <li>*/}
+                        {/*                                                        <div className="filter-checks">*/}
+                        {/*                                                            <label className="checkboxs">*/}
+                        {/*                                                                <input type="checkbox"/>*/}
+                        {/*                                                                <span className="checkmarks"/>*/}
+                        {/*                                                                Germany*/}
+                        {/*                                                            </label>*/}
+                        {/*                                                        </div>*/}
+                        {/*                                                    </li>*/}
+                        {/*                                                </ul>*/}
+                        {/*                                            </div>*/}
+                        {/*                                        </div>*/}
+                        {/*                                    </div>*/}
+                        {/*                                    <div className="filter-set-content">*/}
+                        {/*                                        <div className="filter-set-content-head">*/}
+                        {/*                                            <Link*/}
+                        {/*                                                to="#"*/}
+                        {/*                                                className="collapsed"*/}
+                        {/*                                                data-bs-toggle="collapse"*/}
+                        {/*                                                data-bs-target="#owner"*/}
+                        {/*                                                aria-expanded="false"*/}
+                        {/*                                                aria-controls="owner"*/}
+                        {/*                                            >*/}
+                        {/*                                                Owner*/}
+                        {/*                                            </Link>*/}
+                        {/*                                        </div>*/}
+                        {/*                                        <div*/}
+                        {/*                                            className="filter-set-contents accordion-collapse collapse"*/}
+                        {/*                                            id="owner"*/}
+                        {/*                                            data-bs-parent="#accordionExample"*/}
+                        {/*                                        >*/}
+                        {/*                                            <div className="filter-content-list">*/}
+                        {/*                                                <div className="mb-2 icon-form">*/}
+                        {/*              <span className="form-icon">*/}
+                        {/*                <i className="ti ti-search"/>*/}
+                        {/*              </span>*/}
+                        {/*                                                    <input*/}
+                        {/*                                                        type="text"*/}
+                        {/*                                                        className="form-control"*/}
+                        {/*                                                        placeholder="Search Owner"*/}
+                        {/*                                                    />*/}
+                        {/*                                                </div>*/}
+                        {/*                                                <ul>*/}
+                        {/*                                                    <li>*/}
+                        {/*                                                        <div className="filter-checks">*/}
+                        {/*                                                            <label className="checkboxs">*/}
+                        {/*                                                                <input*/}
+                        {/*                                                                    type="checkbox"*/}
+                        {/*                                                                    defaultChecked*/}
+                        {/*                                                                />*/}
+                        {/*                                                                <span className="checkmarks"/>*/}
+                        {/*                                                                Hendry*/}
+                        {/*                                                            </label>*/}
+                        {/*                                                        </div>*/}
+                        {/*                                                    </li>*/}
+                        {/*                                                    <li>*/}
+                        {/*                                                        <div className="filter-checks">*/}
+                        {/*                                                            <label className="checkboxs">*/}
+                        {/*                                                                <input type="checkbox"/>*/}
+                        {/*                                                                <span className="checkmarks"/>*/}
+                        {/*                                                                Guillory*/}
+                        {/*                                                            </label>*/}
+                        {/*                                                        </div>*/}
+                        {/*                                                    </li>*/}
+                        {/*                                                    <li>*/}
+                        {/*                                                        <div className="filter-checks">*/}
+                        {/*                                                            <label className="checkboxs">*/}
+                        {/*                                                                <input type="checkbox"/>*/}
+                        {/*                                                                <span className="checkmarks"/>*/}
+                        {/*                                                                Jami*/}
+                        {/*                                                            </label>*/}
+                        {/*                                                        </div>*/}
+                        {/*                                                    </li>*/}
+                        {/*                                                    <li>*/}
+                        {/*                                                        <div className="filter-checks">*/}
+                        {/*                                                            <label className="checkboxs">*/}
+                        {/*                                                                <input type="checkbox"/>*/}
+                        {/*                                                                <span className="checkmarks"/>*/}
+                        {/*                                                                Theresa*/}
+                        {/*                                                            </label>*/}
+                        {/*                                                        </div>*/}
+                        {/*                                                    </li>*/}
+                        {/*                                                    <li>*/}
+                        {/*                                                        <div className="filter-checks">*/}
+                        {/*                                                            <label className="checkboxs">*/}
+                        {/*                                                                <input type="checkbox"/>*/}
+                        {/*                                                                <span className="checkmarks"/>*/}
+                        {/*                                                                Espinosa*/}
+                        {/*                                                            </label>*/}
+                        {/*                                                        </div>*/}
+                        {/*                                                    </li>*/}
+                        {/*                                                </ul>*/}
+                        {/*                                            </div>*/}
+                        {/*                                        </div>*/}
+                        {/*                                    </div>*/}
+                        {/*                                    <div className="filter-set-content">*/}
+                        {/*                                        <div className="filter-set-content-head">*/}
+                        {/*                                            <Link*/}
+                        {/*                                                to="#"*/}
+                        {/*                                                className="collapsed"*/}
+                        {/*                                                data-bs-toggle="collapse"*/}
+                        {/*                                                data-bs-target="#Status"*/}
+                        {/*                                                aria-expanded="false"*/}
+                        {/*                                                aria-controls="Status"*/}
+                        {/*                                            >*/}
+                        {/*                                                Status*/}
+                        {/*                                            </Link>*/}
+                        {/*                                        </div>*/}
+                        {/*                                        <div*/}
+                        {/*                                            className="filter-set-contents accordion-collapse collapse"*/}
+                        {/*                                            id="Status"*/}
+                        {/*                                            data-bs-parent="#accordionExample"*/}
+                        {/*                                        >*/}
+                        {/*                                            <div className="filter-content-list">*/}
+                        {/*                                                <ul>*/}
+                        {/*                                                    <li>*/}
+                        {/*                                                        <div className="filter-checks">*/}
+                        {/*                                                            <label className="checkboxs">*/}
+                        {/*                                                                <input*/}
+                        {/*                                                                    type="checkbox"*/}
+                        {/*                                                                    defaultChecked*/}
+                        {/*                                                                />*/}
+                        {/*                                                                <span className="checkmarks"/>*/}
+                        {/*                                                                Active*/}
+                        {/*                                                            </label>*/}
+                        {/*                                                        </div>*/}
+                        {/*                                                    </li>*/}
+                        {/*                                                    <li>*/}
+                        {/*                                                        <div className="filter-checks">*/}
+                        {/*                                                            <label className="checkboxs">*/}
+                        {/*                                                                <input type="checkbox"/>*/}
+                        {/*                                                                <span className="checkmarks"/>*/}
+                        {/*                                                                Inactive*/}
+                        {/*                                                            </label>*/}
+                        {/*                                                        </div>*/}
+                        {/*                                                    </li>*/}
+                        {/*                                                </ul>*/}
+                        {/*                                            </div>*/}
+                        {/*                                        </div>*/}
+                        {/*                                    </div>*/}
+                        {/*                                    <div className="filter-set-content">*/}
+                        {/*                                        <div className="filter-set-content-head">*/}
+                        {/*                                            <Link*/}
+                        {/*                                                to="#"*/}
+                        {/*                                                className="collapsed"*/}
+                        {/*                                                data-bs-toggle="collapse"*/}
+                        {/*                                                data-bs-target="#collapseOne"*/}
+                        {/*                                                aria-expanded="false"*/}
+                        {/*                                                aria-controls="collapseOne"*/}
+                        {/*                                            >*/}
+                        {/*                                                Rating*/}
+                        {/*                                            </Link>*/}
+                        {/*                                        </div>*/}
+                        {/*                                        <div*/}
+                        {/*                                            className="filter-set-contents accordion-collapse collapse"*/}
+                        {/*                                            id="collapseOne"*/}
+                        {/*                                            data-bs-parent="#accordionExample"*/}
+                        {/*                                        >*/}
+                        {/*                                            <div className="filter-content-list">*/}
+                        {/*                                                <ul>*/}
+                        {/*                                                    <li>*/}
+                        {/*                                                        <div className="filter-checks">*/}
+                        {/*                                                            <label className="checkboxs">*/}
+                        {/*                                                                <input*/}
+                        {/*                                                                    type="checkbox"*/}
+                        {/*                                                                    defaultChecked*/}
+                        {/*                                                                />*/}
+                        {/*                                                                <span className="checkmarks"/>*/}
+                        {/*                                                                <span className="rating">*/}
+                        {/*                      <i className="fa fa-star filled"/>*/}
+                        {/*                      <i className="fa fa-star filled"/>*/}
+                        {/*                      <i className="fa fa-star filled"/>*/}
+                        {/*                      <i className="fa fa-star filled"/>*/}
+                        {/*                      <i className="fa fa-star filled"/>*/}
+                        {/*                      <span>5.0</span>*/}
+                        {/*                    </span>*/}
+                        {/*                                                            </label>*/}
+                        {/*                                                        </div>*/}
+                        {/*                                                    </li>*/}
+                        {/*                                                    <li>*/}
+                        {/*                                                        <div className="filter-checks">*/}
+                        {/*                                                            <label className="checkboxs">*/}
+                        {/*                                                                <input type="checkbox"/>*/}
+                        {/*                                                                <span className="checkmarks"/>*/}
+                        {/*                                                                <span className="rating">*/}
+                        {/*                      <i className="fa fa-star filled"/>*/}
+                        {/*                      <i className="fa fa-star filled"/>*/}
+                        {/*                      <i className="fa fa-star filled"/>*/}
+                        {/*                      <i className="fa fa-star filled"/>*/}
+                        {/*                      <i className="fa fa-star"/>*/}
+                        {/*                      <span>4.0</span>*/}
+                        {/*                    </span>*/}
+                        {/*                                                            </label>*/}
+                        {/*                                                        </div>*/}
+                        {/*                                                    </li>*/}
+                        {/*                                                    <li>*/}
+                        {/*                                                        <div className="filter-checks">*/}
+                        {/*                                                            <label className="checkboxs">*/}
+                        {/*                                                                <input type="checkbox"/>*/}
+                        {/*                                                                <span className="checkmarks"/>*/}
+                        {/*                                                                <span className="rating">*/}
+                        {/*                      <i className="fa fa-star filled"/>*/}
+                        {/*                      <i className="fa fa-star filled"/>*/}
+                        {/*                      <i className="fa fa-star filled"/>*/}
+                        {/*                      <i className="fa fa-star"/>*/}
+                        {/*                      <i className="fa fa-star"/>*/}
+                        {/*                      <span>3.0</span>*/}
+                        {/*                    </span>*/}
+                        {/*                                                            </label>*/}
+                        {/*                                                        </div>*/}
+                        {/*                                                    </li>*/}
+                        {/*                                                    <li>*/}
+                        {/*                                                        <div className="filter-checks">*/}
+                        {/*                                                            <label className="checkboxs">*/}
+                        {/*                                                                <input type="checkbox"/>*/}
+                        {/*                                                                <span className="checkmarks"/>*/}
+                        {/*                                                                <span className="rating">*/}
+                        {/*                      <i className="fa fa-star filled"/>*/}
+                        {/*                      <i className="fa fa-star filled"/>*/}
+                        {/*                      <i className="fa fa-star"/>*/}
+                        {/*                      <i className="fa fa-star"/>*/}
+                        {/*                      <i className="fa fa-star"/>*/}
+                        {/*                      <span>2.0</span>*/}
+                        {/*                    </span>*/}
+                        {/*                                                            </label>*/}
+                        {/*                                                        </div>*/}
+                        {/*                                                    </li>*/}
+                        {/*                                                    <li>*/}
+                        {/*                                                        <div className="filter-checks">*/}
+                        {/*                                                            <label className="checkboxs">*/}
+                        {/*                                                                <input type="checkbox"/>*/}
+                        {/*                                                                <span className="checkmarks"/>*/}
+                        {/*                                                                <span className="rating">*/}
+                        {/*                      <i className="fa fa-star filled"/>*/}
+                        {/*                      <i className="fa fa-star"/>*/}
+                        {/*                      <i className="fa fa-star"/>*/}
+                        {/*                      <i className="fa fa-star"/>*/}
+                        {/*                      <i className="fa fa-star"/>*/}
+                        {/*                      <span>1.0</span>*/}
+                        {/*                    </span>*/}
+                        {/*                                                            </label>*/}
+                        {/*                                                        </div>*/}
+                        {/*                                                    </li>*/}
+                        {/*                                                </ul>*/}
+                        {/*                                            </div>*/}
+                        {/*                                        </div>*/}
+                        {/*                                    </div>*/}
+                        {/*                                    <div className="filter-set-content">*/}
+                        {/*                                        <div className="filter-set-content-head">*/}
+                        {/*                                            <Link*/}
+                        {/*                                                to="#"*/}
+                        {/*                                                className="collapsed"*/}
+                        {/*                                                data-bs-toggle="collapse"*/}
+                        {/*                                                data-bs-target="#collapseThree"*/}
+                        {/*                                                aria-expanded="false"*/}
+                        {/*                                                aria-controls="collapseThree"*/}
+                        {/*                                            >*/}
+                        {/*                                                Tags*/}
+                        {/*                                            </Link>*/}
+                        {/*                                        </div>*/}
+                        {/*                                        <div*/}
+                        {/*                                            className="filter-set-contents accordion-collapse collapse"*/}
+                        {/*                                            id="collapseThree"*/}
+                        {/*                                            data-bs-parent="#accordionExample"*/}
+                        {/*                                        >*/}
+                        {/*                                            <div className="filter-content-list">*/}
+                        {/*                                                <ul>*/}
+                        {/*                                                    <li>*/}
+                        {/*                                                        <div className="filter-checks">*/}
+                        {/*                                                            <label className="checkboxs">*/}
+                        {/*                                                                <input*/}
+                        {/*                                                                    type="checkbox"*/}
+                        {/*                                                                    defaultChecked*/}
+                        {/*                                                                />*/}
+                        {/*                                                                <span className="checkmarks"/>*/}
+                        {/*                                                                Promotion*/}
+                        {/*                                                            </label>*/}
+                        {/*                                                        </div>*/}
+                        {/*                                                    </li>*/}
+                        {/*                                                    <li>*/}
+                        {/*                                                        <div className="filter-checks">*/}
+                        {/*                                                            <label className="checkboxs">*/}
+                        {/*                                                                <input type="checkbox"/>*/}
+                        {/*                                                                <span className="checkmarks"/>*/}
+                        {/*                                                                Rated*/}
+                        {/*                                                            </label>*/}
+                        {/*                                                        </div>*/}
+                        {/*                                                    </li>*/}
+                        {/*                                                    <li>*/}
+                        {/*                                                        <div className="filter-checks">*/}
+                        {/*                                                            <label className="checkboxs">*/}
+                        {/*                                                                <input type="checkbox"/>*/}
+                        {/*                                                                <span className="checkmarks"/>*/}
+                        {/*                                                                Rejected*/}
+                        {/*                                                            </label>*/}
+                        {/*                                                        </div>*/}
+                        {/*                                                    </li>*/}
+                        {/*                                                    <li>*/}
+                        {/*                                                        <div className="filter-checks">*/}
+                        {/*                                                            <label className="checkboxs">*/}
+                        {/*                                                                <input type="checkbox"/>*/}
+                        {/*                                                                <span className="checkmarks"/>*/}
+                        {/*                                                                Collab*/}
+                        {/*                                                            </label>*/}
+                        {/*                                                        </div>*/}
+                        {/*                                                    </li>*/}
+                        {/*                                                    <li>*/}
+                        {/*                                                        <div className="filter-checks">*/}
+                        {/*                                                            <label className="checkboxs">*/}
+                        {/*                                                                <input type="checkbox"/>*/}
+                        {/*                                                                <span className="checkmarks"/>*/}
+                        {/*                                                                Calls*/}
+                        {/*                                                            </label>*/}
+                        {/*                                                        </div>*/}
+                        {/*                                                    </li>*/}
+                        {/*                                                </ul>*/}
+                        {/*                                            </div>*/}
+                        {/*                                        </div>*/}
+                        {/*                                    </div>*/}
+                        {/*                                </div>*/}
+                        {/*                                <div className="filter-reset-btns">*/}
+                        {/*                                    <div className="row">*/}
+                        {/*                                        <div className="col-6">*/}
+                        {/*                                            <Link to="#" className="btn btn-light">*/}
+                        {/*                                                Reset*/}
+                        {/*                                            </Link>*/}
+                        {/*                                        </div>*/}
+                        {/*                                        <div className="col-6">*/}
+                        {/*                                            <Link to="#" className="btn btn-primary">*/}
+                        {/*                                                Filter*/}
+                        {/*                                            </Link>*/}
+                        {/*                                        </div>*/}
+                        {/*                                    </div>*/}
+                        {/*                                </div>*/}
+                        {/*                            </div>*/}
+                        {/*                        </div>*/}
+                        {/*                    </div>*/}
+                        {/*                    <div className="view-icons">*/}
+                        {/*                        <Link to="#" className="active">*/}
+                        {/*                            <i className="ti ti-list-tree"/>*/}
+                        {/*                        </Link>*/}
+                        {/*                        <Link to={route.contactGrid}>*/}
+                        {/*                            <i className="ti ti-grid-dots"/>*/}
+                        {/*                        </Link>*/}
+                        {/*                    </div>*/}
+                        {/*                </div>*/}
+                        {/*            </div>*/}
 
                                     {/* /Filter */}
                                     {/* Contact List */}

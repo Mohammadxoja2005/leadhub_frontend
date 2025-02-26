@@ -21,14 +21,14 @@ const CollapseHeader = () => {
                     <i className="ti ti-refresh-dot"/>
                 </Link>
             </OverlayTrigger>
-            <OverlayTrigger
-                placement="bottom"
-                overlay={<Tooltip id="collapse-tooltip">Collapse</Tooltip>}
-            >
-                <Link to="#" id="collapse-header" onClick={toggleHeaderCollapse}>
-                    <i className="ti ti-chevrons-up"/>
-                </Link>
-            </OverlayTrigger>
+            {/*<OverlayTrigger*/}
+            {/*    placement="bottom"*/}
+            {/*    overlay={<Tooltip id="collapse-tooltip">Collapse</Tooltip>}*/}
+            {/*>*/}
+            {/*    <Link to="#" id="collapse-header" onClick={toggleHeaderCollapse}>*/}
+            {/*        <i className="ti ti-chevrons-up"/>*/}
+            {/*    </Link>*/}
+            {/*</OverlayTrigger>*/}
         </>
     )
 }

@@ -233,7 +233,7 @@ const LeadsDashboard = () => {
                                             <div
                                                 className="daterange-picker d-flex align-items-center justify-content-center">
                                                 <div className="form-sort me-2">
-                                                    <i className="ti ti-calendar"/>
+                                                    {/*<i className="ti ti-calendar"/>*/}
                                                     {/*<DateRangePicker*/}
                                                     {/*    initialSettings={initialSettings}*/}
                                                     {/*>*/}
