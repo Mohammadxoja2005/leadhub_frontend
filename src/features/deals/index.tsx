@@ -138,7 +138,7 @@ const Deals = () => {
             dataIndex: "dealName",
             render: (text: any) => (
                 <div>
-                    <div><Link to={route.dealsDetails} className="title-name">{text}</Link></div>
+                    <div><p to={route.dealsDetails} className="title-name">{text}</p></div>
                 </div>
             ),
             sorter: (a: DealsInterface, b: DealsInterface) =>
@@ -247,9 +247,9 @@ const Deals = () => {
                         }}
                         data-popper-placement="bottom-start"
                     >
-                        <Link className="dropdown-item" to="#">
-                            <i className="ti ti-bounce-right text-info"></i>Add Activity
-                        </Link>
+                        {/*<Link className="dropdown-item" to="#">*/}
+                        {/*    <i className="ti ti-bounce-right text-info"></i>Add Activity*/}
+                        {/*</Link>*/}
                         <Link
                             className="dropdown-item edit-popup"
                             to="#"
@@ -266,9 +266,9 @@ const Deals = () => {
                         >
                             <i className="ti ti-trash text-danger"></i> Delete
                         </Link>
-                        <Link className="dropdown-item" to={route.dealsDashboard}>
-                            <i className="ti ti-eye text-blue-light"></i> Preview
-                        </Link>
+                        {/*<Link className="dropdown-item" to={route.dealsDashboard}>*/}
+                        {/*    <i className="ti ti-eye text-blue-light"></i> Preview*/}
+                        {/*</Link>*/}
                     </div>
                 </div>
             ),
