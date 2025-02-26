@@ -121,18 +121,18 @@ const Deals = () => {
         }));
     };
     const columns = [
-        {
-            title: "",
-            dataIndex: "",
-            render: (text: string, record: any, index: number) => (
-                <div
-                    className={`set-star rating-select ${stars[index] ? "filled" : ""}`}
-                    onClick={() => handleStarToggle(index)}
-                >
-                    <i className="fa fa-star"></i>
-                </div>
-            ),
-        },
+        // {
+        //     title: "",
+        //     dataIndex: "",
+        //     render: (text: string, record: any, index: number) => (
+        //         <div
+        //             className={`set-star rating-select ${stars[index] ? "filled" : ""}`}
+        //             onClick={() => handleStarToggle(index)}
+        //         >
+        //             <i className="fa fa-star"></i>
+        //         </div>
+        //     ),
+        // },
         {
             title: "Deal Name",
             dataIndex: "dealName",

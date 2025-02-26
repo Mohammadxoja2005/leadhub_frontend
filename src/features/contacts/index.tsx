@@ -130,35 +130,35 @@ const ContactList = () => {
         }));
     };
     const columns = [
-        {
-            title: "",
-            dataIndex: "",
-            render: (text: string, record: any, index: number) => (
-                <div
-                    className={`set-star rating-select ${stars[index] ? "filled" : ""}`}
-                    onClick={() => handleStarToggle(index)}
-                    key={index}
-                >
-                    <i className="fa fa-star"></i>
-                </div>
-            ),
-        },
+        // {
+        //     title: "",
+        //     dataIndex: "",
+        //     render: (text: string, record: any, index: number) => (
+        //         <div
+        //             className={`set-star rating-select ${stars[index] ? "filled" : ""}`}
+        //             onClick={() => handleStarToggle(index)}
+        //             key={index}
+        //         >
+        //             <i className="fa fa-star"></i>
+        //         </div>
+        //     ),
+        // },
         {
             title: "Name",
             dataIndex: "Phone",
             render: (text: string, record: any, index: number) => (
                 <h2 className="d-flex align-items-center" key={index}>
-                    <Link to={route.contactDetails} className="avatar avatar-sm me-2">
+                    <a to={route.contactDetails} className="avatar avatar-sm me-2">
                         <ImageWithBasePath
                             className="img-fluid"
                             src={record.customer_image}
                             alt={text}
                         />
-                    </Link>
-                    <Link to={route.contactDetails} className="d-flex flex-column">
+                    </a>
+                    <a to={route.contactDetails} className="d-flex flex-column">
                         {record.customer_name}
                         <span className="text-default">{record.customer_no} </span>
-                    </Link>
+                    </a>
                 </h2>
             ),
             sorter: (a: TableData, b: TableData) => a.phone.length - b.phone.length,
@@ -319,8 +319,8 @@ const ContactList = () => {
                         >
                             <i className="ti ti-trash text-danger"></i> Delete
                         </Link>
-                        <Link className="dropdown-item" to={route.contactDetails}><i
-                            className="ti ti-eye text-blue-light"></i> Preview</Link>
+                        {/*<Link className="dropdown-item" to={route.contactDetails}><i*/}
+                        {/*    className="ti ti-eye text-blue-light"></i> Preview</Link>*/}
                     </div>
                 </div>
             ),

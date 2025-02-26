@@ -57,18 +57,18 @@ const Leads = () => {
         }));
     };
     const columns = [
-        {
-            title: "",
-            dataIndex: "",
-            render: (_text: string, _record: any, index: number) => (
-                <div
-                    className={`set-star rating-select ${stars[index] ? "filled" : ""}`}
-                    onClick={() => handleStarToggle(index)}
-                >
-                    <i className="fa fa-star"></i>
-                </div>
-            ),
-        },
+            // {
+            //     title: "",
+            //     dataIndex: "",
+            //     render: (_text: string, _record: any, index: number) => (
+            //         <div
+            //             className={`set-star rating-select ${stars[index] ? "filled" : ""}`}
+            //             onClick={() => handleStarToggle(index)}
+            //         >
+            //             <i className="fa fa-star"></i>
+            //         </div>
+            //     ),
+            // },
         {
             title: "Lead Name",
             dataIndex: "lead_name",
